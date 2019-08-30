@@ -7,7 +7,6 @@ ARG LTS_SLUG=lts-10.1
 ARG PID1_VERSION=0.1.0.1
 ARG DEBIAN_FRONTEND=noninteractive
 
-
 RUN apt-get update                                                          && \
     apt-get -y install software-properties-common                           && \
     add-apt-repository ppa:hvr/ghc                                          && \
